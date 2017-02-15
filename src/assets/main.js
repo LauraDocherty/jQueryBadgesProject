@@ -10,7 +10,7 @@ $(function() {
 	  var innerHtml = "";
 	  for(i=0; i<response.courses.completed.length; i++)
 	  {
-		  innerHtml += '<div class="course"> <h3>'+ response.courses.completed[i].title + '</h3><img>'+ +'</div>';
+		  innerHtml += '<div class="course"> <h3>'+ response.courses.completed[i].title + '</h3><img src="'+ response.courses.completed[i].badge+'"></img><a href="'+ response.courses.completed[i].url+'" target="_blank" class="btn btn-primary">'+"See Course"+'</a></div>';
 	  }
 	  element.innerHTML = innerHtml;
     }
